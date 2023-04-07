@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+    <meta charset="utf-8">
+    <TITLE>Game</TITLE>
+
+    <STYLE TYPE = "text/css">
+    <!--
+        BODY {background-color:#f6ffe7}
+        .font1 {font-family:"Arial Black"; font-size:37pt;  text-align:center; color:#5F2987; font-weight:400}
+        .position1 {position: absolute; top: 200pt; left: 220pt}
+        .position2 {position: absolute; top: 200pt; left: 620pt}
+        .positionH {position: absolute; top: 28pt; right: 80pt}
+    //-->
+    </STYLE>
+
+    <SCRIPT LANGUAGE="JavaScript"> 
+        function Opengame1() { 
+            window.open("game1.html","동서남북게임","width=750,height=500");
+        }
+        function Opengame2() { 
+            window.open("game2.html","심리테스트","width=630,height=700"); 
+        }
+    </SCRIPT>
+
+</HEAD>
+<BODY TOPMARGIN="80" LEFTMARGIN="40">
+    <A HREF="3main.html" Target="_self"><img src="home.JPG" width="120" CLASS="positionH"></A>
+    <P CLASS="font1">what game do you want to play? </P>
+    <img onClick="Opengame1()" src="game1.jpg" width="450" CLASS="position1">
+    <img onClick="Opengame2()" src="game2.jpg" width="450" CLASS="position2">
+</BODY>
+</HTML>

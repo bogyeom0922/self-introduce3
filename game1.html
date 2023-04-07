@@ -1,0 +1,88 @@
+<HTML>
+    <HEAD>
+        <meta charset="utf-8">
+        <TITLE>동서남북 게임</TITLE>
+    
+        <STYLE TYPE = "text/css">
+        <!--
+            BODY {background-color:#f6ffe7}
+            .font1 {font-family:"HY견고딕"; font-size:37pt;  text-align:center; color:#5F2987; font-weight:600}
+            .position1 {position: absolute; top: 150pt; left: 45pt}
+            .position2 {position: absolute; top: 156pt; right: 45pt}
+            .table1 {table-layout: fixed; border-collapse: collapse}
+            TABLE, TD {border: 2px solid #b3b3b3}
+        //-->
+        </STYLE>
+    
+        <SCRIPT LANGUAGE="JavaScript"> 
+        function playGame(choice) {
+            Win1 = window.open("","popup1","width=400,height=250"); 
+            Win1.document.open(); 
+            Win1.document.write("<HTML><HEAD><TITLE>SAMPLE</TITLE></HEAD>"); 
+            Win1.document.write("<BODY bgColor='#E8F4EA'>"); 
+            switch(choice){
+                case 1 : 
+                    Win1.document.write("<BR>" + "<BR>" + "<BR>" + "<h1><P ALIGN='center'><B> 딱밤맞기 </B></P></h1>");
+                    break;
+                case 2 : 
+                    Win1.document.write("<BR>" + "<BR>" + "<BR>" + "<h1><P ALIGN='center'><B> 아이스크림 1회 쏘기 </B></P></h1>");
+                    break; 
+                case 3 : 
+                    Win1.document.write("<BR>" + "<BR>" + "<BR>" + "<h1><P ALIGN='center'><B> 손목맞기 </B></P></h1>");
+                    break; 
+                case 4 : 
+                    Win1.document.write("<BR>" + "<BR>" + "<BR>" + "<h1><P ALIGN='center'><B>  Lucky ! </B></P></h1>");
+                    break; 
+                case 5 : 
+                    Win1.document.write("<BR>" + "<BR>" + "<BR>" + "<h1><P ALIGN='center'><B> 15초동안 춤추기 </B></P></h1>");
+                    break; 
+                case 6 : 
+                    Win1.document.write("<BR>" + "<BR>" + "<BR>" + "<h1><P ALIGN='center'><B> 콜라먹고 트름참기 </B></P></h1>");
+                    break; 
+                case 7 : 
+                    Win1.document.write("<BR>" + "<BR>" + "<BR>" + "<h1><P ALIGN='center'><B> 캡사이신 한숟가락 먹고 물안먹기 </B></P></h1>");
+                    break; 
+                case 8 : 
+                    Win1.document.write("<BR>" + "<BR>" + "<BR>" + "<h1><P ALIGN='center'><B> 한 번 더 ! </B></P></h1>");
+                    break;  
+            }
+            Win1.document.write("</BODY></HTML>"); 
+            Win1.document.close(); 
+		}
+        </SCRIPT>
+    
+    </HEAD>
+    <BODY TOPMARGIN="65">
+        <P CLASS="font1"> 동서남북 게임하기 ! </P>
+        <img src="game1-1.jpg" width="310" CLASS="position1">
+
+        <FORM NAME="game">
+            <TABLE WIDTH="290" HEIGHT="200" CELLPADING="5" CLASS="position2 table1">
+              <TR> 
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="동쪽 1번" onClick="playGame(1);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="동쪽 2번" onClick="playGame(2);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="동쪽 3번" onClick="playGame(1);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="동쪽 4번" onClick="playGame(2);"></td>
+              </TR>
+              <TR> 
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="서쪽 1번" onClick="playGame(3);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="서쪽 2번" onClick="playGame(4);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="서쪽 3번" onClick="playGame(3);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="서쪽 4번" onClick="playGame(4);"></td>
+              </TR>
+              <TR> 
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="남쪽 1번" onClick="playGame(5);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="남쪽 2번" onClick="playGame(6);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="남쪽 3번" onClick="playGame(5);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="남쪽 4번" onClick="playGame(6);"></td>
+              </TR>
+              <TR> 
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="북쪽 1번" onClick="playGame(7);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="북쪽 2번" onClick="playGame(8);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="북쪽 3번" onClick="playGame(7);"></td>
+                <TD ALIGN="center"><INPUT TYPE="button" VALUE="북쪽 4번" onClick="playGame(8);"></td>
+              </TR>
+            </TABLE>
+        </FORM>
+    </BODY>
+    </HTML>
